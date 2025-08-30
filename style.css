@@ -1,0 +1,45 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+.resume-preview {
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.draggable-section {
+    cursor: grab;
+    position: relative;
+}
+.draggable-section .drag-handle {
+    position: absolute;
+    top: 1.5rem;
+    left: -1rem;
+    cursor: grab;
+    color: #9ca3af;
+}
+.dragging {
+    opacity: 0.5;
+    border: 2px dashed #4f46e5;
+}
+#profile-image-preview {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e5e7eb;
+}
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .resume-preview, .resume-preview * {
+        visibility: visible;
+    }
+    .resume-preview {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    .no-print {
+        display: none;
+    }
+}
