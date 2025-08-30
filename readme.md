@@ -30,7 +30,7 @@ This is a purely client-side application. No build steps or server is required.
 
 1.  **Clone the repository:**
     ```bash
-    git clone 
+    git clone https://github.com/skee21/resume-builder
     ```
 2.  **Navigate to the directory:**
     ```bash
